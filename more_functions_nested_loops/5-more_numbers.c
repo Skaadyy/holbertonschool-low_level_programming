@@ -1,22 +1,18 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the numbers.
- * Return: no return
- */
+*print_numbers - print 0123456789
+*Return: void
+*/
 
-void more_numbers(void)
+void print_numbers(void)
+
 {
+	char c;
 
-int i, j;
-	for (i = 1; i <= 10; i++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (j = 0; j <= 14; j++)
-		{
-			if (j >= 10)
-			_putchar('1');
-			_putchar(j % 10 + '0');
-		}
-			_putchar('\n');
-		}
+	_putchar(c);
+	}
+	_putchar('\n');
 }
